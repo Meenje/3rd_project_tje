@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load socialaccount %}
+{% providers_media_js %}
+<link>
+<meta charset="UTF-8">
+<title>Gradient</title>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="../../static/js/kakao_btn.js"></script>
+<link rel="stylesheet" href="../../static/css/kakao_login2.css" type="text/css" media="screen"></link>
+<style>
+    button {
+        background-image: url(../../static/img_kakao/kakao_btn_1.png);
+        width: 222px;
+        height: 49px;
+        outline: 0;
+        background-color: greenyellow;
+        border-color: greenyellow;
+    }
+
+    button:hover {
+        background-color: floralwhite;
+        border-color: floralwhite;
+    }
+</style>
+</head>
+<body>
+<!--<a href="#">카카오 로그인</a>}-->
+{% comment %}<h1>Velkomme</h1>
+{% if request.user.is_authenticated %}
+    <div onclick="logout()">로그아웃</div>
+{% else %}
+    <div onclick="login()">로그인</div>
+{% endif %}{% endcomment %}
+<form class="login-form" action="javascript:void(0);">
+    <h1>Login</h1>
+    <button type="button" class="btn" id="kakao-btn"></button>
+</form>
+</body>
+</html>

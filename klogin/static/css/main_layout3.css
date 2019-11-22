@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.8fr 1.8fr 0.8fr;
+    grid-template-rows: 0.2fr 0.3fr 0.4fr 2.2fr 0.2fr 1fr;
+    grid-template-areas: "Top Top Top" "RightSide MiddleFirst LeftSide" "RightSide MiddleSecond LeftSide" "RightSide Graph LeftSide" "RightSide Predict LeftSide" "RightSide News LeftSide";
+}
+
+.Top {
+    grid-area: Top;
+}
+
+.RightSide {
+    grid-area: RightSide;
+}
+
+.LeftSide {
+    grid-area: LeftSide;
+}
+
+.MiddleFirst {
+    grid-area: MiddleFirst;
+}
+
+.MiddleSecond {
+    grid-area: MiddleSecond;
+}
+
+.Graph {
+    grid-area: Graph;
+}
+
+.Predict {
+    grid-area: Predict;
+}
+
+.News {
+    grid-area: News;
+}
+
